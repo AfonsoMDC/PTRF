@@ -677,3 +677,103 @@ export const projectDetailUi = {
     en: "Video available in the full version.",
   } as Bi,
 }
+
+/* ── LEGAL PAGES ────────────────────────────────────────────────── */
+
+export type LegalDoc = {
+  slug: string
+  title: Bi
+  updated: Bi
+  sections: { heading: Bi; body: Bi[] }[]
+}
+
+export const legalPages: Record<string, LegalDoc> = {
+  privacy: {
+    slug: "privacy",
+    title: { nl: "Privacybeleid", en: "Privacy Policy" },
+    updated: { nl: "Laatst bijgewerkt — 2025", en: "Last updated — 2025" },
+    sections: [
+      {
+        heading: { nl: "Welke gegevens", en: "What data" },
+        body: [
+          {
+            nl: "Deze portfoliosite verzamelt geen persoonsgegevens automatisch. Wanneer je het contactformulier gebruikt, opent dit je eigen e-mailprogramma — er wordt niets op deze site opgeslagen.",
+            en: "This portfolio site does not automatically collect personal data. When you use the contact form, it opens your own email client — nothing is stored on this site.",
+          },
+        ],
+      },
+      {
+        heading: { nl: "Hosting", en: "Hosting" },
+        body: [
+          {
+            nl: "De site wordt gehost op Vercel. De hostingprovider kan technische logbestanden bijhouden voor beveiliging en prestaties.",
+            en: "The site is hosted on Vercel. The hosting provider may keep technical logs for security and performance.",
+          },
+        ],
+      },
+      {
+        heading: { nl: "Contact", en: "Contact" },
+        body: [
+          {
+            nl: "Vragen over privacy? Neem contact op via het e-mailadres onderaan deze pagina.",
+            en: "Questions about privacy? Get in touch via the email address at the bottom of this page.",
+          },
+        ],
+      },
+    ],
+  },
+  cookies: {
+    slug: "cookies",
+    title: { nl: "Cookiebeleid", en: "Cookie Policy" },
+    updated: { nl: "Laatst bijgewerkt — 2025", en: "Last updated — 2025" },
+    sections: [
+      {
+        heading: { nl: "Cookies", en: "Cookies" },
+        body: [
+          {
+            nl: "Deze site plaatst geen tracking- of marketingcookies. Enkel strikt noodzakelijke voorkeuren, zoals je taalkeuze, worden lokaal in je browser bewaard.",
+            en: "This site sets no tracking or marketing cookies. Only strictly necessary preferences, such as your language choice, are stored locally in your browser.",
+          },
+        ],
+      },
+      {
+        heading: { nl: "Beheer", en: "Control" },
+        body: [
+          {
+            nl: "Je kan lokale opslag op elk moment wissen via de instellingen van je browser.",
+            en: "You can clear local storage at any time through your browser settings.",
+          },
+        ],
+      },
+    ],
+  },
+  disclaimer: {
+    slug: "disclaimer",
+    title: { nl: "Disclaimer", en: "Disclaimer" },
+    updated: { nl: "Laatst bijgewerkt — 2025", en: "Last updated — 2025" },
+    sections: [
+      {
+        heading: { nl: "Auteursrecht", en: "Copyright" },
+        body: [
+          {
+            nl: "Al het getoonde werk is gemaakt door Afonso Matos da Cruz in een educatieve context. Beeldmateriaal en ontwerpen mogen niet zonder toestemming worden hergebruikt.",
+            en: "All work shown is created by Afonso Matos da Cruz in an educational context. Imagery and designs may not be reused without permission.",
+          },
+        ],
+      },
+      {
+        heading: { nl: "Bronnen", en: "Sources" },
+        body: [
+          {
+            nl: "Sommige projecten zijn gebaseerd op opdrachten van grafischetechnieken.be. Merknamen en logo's behoren toe aan hun respectieve eigenaars.",
+            en: "Some projects are based on assignments from grafischetechnieken.be. Brand names and logos belong to their respective owners.",
+          },
+        ],
+      },
+    ],
+  },
+}
+
+export const legalUi = {
+  back: { nl: "← Terug naar start", en: "← Back to home" } as Bi,
+}
