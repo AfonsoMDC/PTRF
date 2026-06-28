@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afonso Matos da Cruz — Grafisch Ontwerper · Gent</title>
+  <meta name="description" content="Afonso Matos da Cruz — grafisch ontwerper gespecialiseerd in editorial design, typografie en branding. Gevestigd in Gent, België.">
+  <meta name="author" content="Afonso Matos da Cruz">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Afonso Matos da Cruz — Grafisch Ontwerper · Gent">
+  <meta property="og:description" content="Editorial design, typografie en branding vanuit Gent, België.">
+  <meta property="og:image" content="assets/smak/poster.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,600;0,700;0,900;1,700;1,900&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/smak/poster.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Footer line reveal */
+    .rl-line {
+      display: block;
+      transform: translateY(100%);
+      opacity: 0;
+      transition: transform 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                  opacity 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .footer-big { overflow: hidden; }
+    .rl-line.rl-show { transform: translateY(0); opacity: 1; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Afonso Matos da Cruz",
+    "jobTitle": "Graphic Designer",
+    "description": "Grafisch ontwerper gespecialiseerd in editorial design, typografie en branding.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Gent", "addressCountry": "BE" },
+    "knowsAbout": ["Editorial Design","Typography","Branding","Visual Identity","Art Direction","Web Design","Motion Design"]
+  }
+  </script>
+</head>
+<body class="noscroll">
+
+  <div id="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <div class="cursor-label">Bekijken</div>
+  </div>
+
+  <div id="progress" aria-hidden="true"></div>
+
+  <div id="loader" role="status" aria-label="Laden">
+    <div class="loader-name"><span>Afonso Matos da Cruz</span></div>
+    <div class="loader-role">Grafisch Ontwerper · Gent, BE</div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <div id="page-wipe" aria-hidden="true"></div>
+
+  <a href="#main" class="skip-link">Naar inhoud</a>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigatiemenu">
+    <nav class="mob-nav" aria-label="Mobiele navigatie">
+      <a href="#werk">Werk</a>
+      <a href="#over">Over</a>
+      <a href="#archief">Werken</a>
+      <a href="#foto">Fotografie</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="mob-footer">
+      <div class="mob-social">
+        <a href="https://www.instagram.com/afonsomatosdacruz/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.behance.net/afonsomatos" target="_blank" rel="noopener">Behance</a>
+        <a href="https://www.linkedin.com/in/afonsomatos/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <span class="mob-copy">© <span data-year></span> AMC</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header id="nav" role="banner">
+    <div class="wrap nav-wrap">
+      <a href="#hero" class="nav-logo">AMC<sup>®</sup></a>
+      <nav class="nav-links" aria-label="Hoofdnavigatie">
+        <a href="#werk">Werk</a>
+        <a href="#over">Over</a>
+        <a href="#archief">Werken</a>
+        <a href="#foto">Fotografie</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <div class="nav-social" aria-label="Social media">
+          <a href="https://www.instagram.com/afonsomatosdacruz/" target="_blank" rel="noopener" aria-label="Instagram">Ig</a>
+          <a href="https://www.behance.net/afonsomatos" target="_blank" rel="noopener" aria-label="Behance">Be</a>
+          <a href="https://www.linkedin.com/in/afonsomatos/" target="_blank" rel="noopener" aria-label="LinkedIn">Li</a>
+        </div>
+        <button class="hamburger" id="hbg" aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+    <section id="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+
+        <div class="hero-top">
+          <div class="hero-availability">
+            <span class="dot-green" aria-hidden="true"></span>
+            Beschikbaar voor stage &amp; freelance
+          </div>
+          <div class="hero-location">Gent, België — <span data-year></span></div>
+        </div>
+
+        <div class="hero-name-block">
+          <h1 id="hero-title" class="hero-name" aria-label="Afonso Matos da Cruz">
+            <span class="hero-name-line"><span>AFONSO</span></span>
+            <span class="hero-name-line"><span>MATOS</span></span>
+            <span class="hero-name-line"><span>DA&nbsp;CRUZ</span></span>
+          </h1>
+
+          <div class="hero-roles" role="list">
+            <div class="hero-role" role="listitem">
+              <span class="hero-role-label">Discipline</span>
+              <span class="hero-role-value">Grafisch Ontwerper</span>
+            </div>
+            <div class="hero-role" role="listitem">
+              <span class="hero-role-label">Focus</span>
+              <span class="hero-role-value">Editorial &amp; Typografie</span>
+            </div>
+            <div class="hero-role" role="listitem">
+              <span class="hero-role-label">Locatie</span>
+              <span class="hero-role-value">Gent, België</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-bottom">
+          <div class="hero-scroll" aria-hidden="true">
+            <span class="hero-scroll-line"></span>
+            Scroll
+          </div>
+          <div class="hero-tagline">Editorial — Branding — Motion — Web</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Editorial Design — <em>★</em> — Typografie — <em>★</em> — Branding — <em>★</em> — Visuele Identiteit — <em>★</em> — Art Direction — <em>★</em> — Motion Design — <em>★</em> — Webdesign — <em>★</em> — Gent, BE — <em>★</em> — </span>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════ WERK ═══════════════════════════ -->
+    <section id="werk" aria-labelledby="werk-title">
+      <div class="wrap sec-pad">
+
+        <div class="sec-hd">
+          <div class="sec-hd-left">
+            <span class="label label-red fu">01 — Geselecteerd werk</span>
+            <h2 id="werk-title" class="sec-title fu" style="--delay:.08s">Projecten</h2>
+          </div>
+          <span class="sec-ghost fu" style="--delay:.12s" aria-hidden="true">03</span>
+        </div>
+
+        <div id="project-list" role="list" aria-label="Geselecteerde projecten"></div>
+
+      </div>
+    </section>
+
+    <!-- Full-bleed break -->
+    <div class="interstitial" role="img" aria-label="S.M.A.K. — editorial compositie">
+      <img src="assets/smak/affiche_schaduw.jpg"
+           alt="S.M.A.K. — Beeld, Twijfel &amp; Constructie — affiche in context"
+           loading="lazy" decoding="async">
+      <div class="interstitial-overlay" aria-hidden="true">
+        <div class="interstitial-text">
+          Design dat iets<br><em>zegt.</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════ OVER ═══════════════════════════ -->
+    <section id="over" aria-labelledby="over-title">
+      <div class="wrap sec-pad">
+
+        <div class="sec-hd">
+          <div class="sec-hd-left">
+            <span class="label label-red fu">02 — Over mij</span>
+            <h2 id="over-title" class="sec-title fu" style="--delay:.08s">Wie ik ben</h2>
+          </div>
+        </div>
+
+        <div class="about-grid">
+
+          <div class="fu" style="--delay:.05s; position:relative">
+            <div class="about-accent" aria-hidden="true"></div>
+            <div class="about-photo">
+              <img src="assets/misc/woordwolk.jpg"
+                   alt="Afonso Matos da Cruz aan het werk — woordwolk in Adobe Illustrator"
+                   loading="lazy" decoding="async">
+              <div class="about-photo-label">Don Bosco SDW · Gent · 2025</div>
+            </div>
+          </div>
+
+          <div class="about-body">
+            <h3 class="about-heading fu" style="--delay:.1s">
+              Design dat iets<br><em>zegt.</em>
+            </h3>
+
+            <p class="about-text fu" style="--delay:.16s">
+              Ik ben Afonso Matos da Cruz — grafisch ontwerper vanuit Gent met een scherp oog voor typografie, editorial design en visuele identiteit. Elk ontwerp heeft iets te zeggen, en de manier waarop het dat zegt is minstens zo belangrijk als de boodschap zelf.
+            </p>
+
+            <p class="about-text muted fu" style="--delay:.2s">
+              Momenteel in opleiding Grafische Technieken (4D A-GT) aan Don Bosco Sint-Denijs-Westrem. Naast schoolprojecten werk ik aan persoonlijke werken en bouw ik aan <strong style="color:#0A0A0A">Rich Minds</strong>.
+            </p>
+
+            <div class="about-table fu" style="--delay:.24s">
+              <div class="about-row">
+                <span class="about-key">Opleiding</span>
+                <span class="about-val">Grafische Technieken (4D A-GT)<br>Don Bosco SDW, Gent</span>
+              </div>
+              <div class="about-row">
+                <span class="about-key">Expertise</span>
+                <span class="about-val">Editorial · Typografie · Branding · Visual Identity · Webdesign · Motion</span>
+              </div>
+              <div class="about-row">
+                <span class="about-key">Software</span>
+                <span class="about-val">Illustrator · Photoshop · InDesign · Premiere · After Effects · HTML · CSS · JS</span>
+              </div>
+              <div class="about-row">
+                <span class="about-key">Locatie</span>
+                <span class="about-val">Gent, België</span>
+              </div>
+            </div>
+
+            <div class="about-ctas fu" style="--delay:.28s">
+              <a href="assets/cv-afonso-matos-da-cruz.pdf" download class="btn btn-dark">CV Downloaden</a>
+              <a href="#contact" class="btn btn-outline">Samenwerken</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pillars" role="list" aria-label="Design filosofie">
+          <div class="pillar fu" style="--delay:.05s" role="listitem">
+            <div class="pillar-num">01 — Concept</div>
+            <div class="pillar-title">Concept boven esthetiek</div>
+            <p class="pillar-text">Design dat alleen mooi is, is incompleet. Elk visueel besluit verdient een reden.</p>
+          </div>
+          <div class="pillar fu" style="--delay:.1s" role="listitem">
+            <div class="pillar-num">02 — Typografie</div>
+            <div class="pillar-title">Type als architectuur</div>
+            <p class="pillar-text">Lettertype, witruimte en hiërarchie vormen de structuur van elke communicatie.</p>
+          </div>
+          <div class="pillar fu" style="--delay:.15s" role="listitem">
+            <div class="pillar-num">03 — Precisie</div>
+            <div class="pillar-title">Minder is preciezer</div>
+            <p class="pillar-text">Minder keuzes, scherpere intenties. Witruimte is een designbeslissing, geen tekort.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ ARCHIEF ════════════════════════════ -->
+    <section id="archief" aria-labelledby="archief-title">
+      <div class="wrap sec-pad">
+
+        <div class="sec-hd">
+          <div class="sec-hd-left">
+            <span class="label label-red fu">03 — Losse werken</span>
+            <h2 id="archief-title" class="sec-title fu" style="--delay:.08s">Overige Werken</h2>
+          </div>
+          <span class="sec-ghost fu" style="--delay:.12s" aria-hidden="true">07</span>
+        </div>
+
+        <p class="archive-note fu" style="--delay:.15s">
+          Experimentele posters, persoonlijke projecten en grafische werken buiten de grote projecten.
+        </p>
+
+        <div id="archive-grid" class="archive-grid" role="list" aria-label="Archiefwerken"></div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ FOTOGRAFIE ═════════════════════════ -->
+    <section id="foto" aria-labelledby="foto-title">
+      <div class="wrap sec-pad">
+
+        <div class="sec-hd">
+          <div class="sec-hd-left">
+            <span class="label label-red fu">04 — Fotografie &amp; Video</span>
+            <h2 id="foto-title" class="sec-title fu" style="--delay:.08s">Oog voor het beeld</h2>
+          </div>
+        </div>
+
+        <div class="photo-layout">
+          <div class="photo-intro">
+            <h3 class="photo-heading fu" style="--delay:.05s">
+              Straat.<br>Architectuur.<br><em>Moment.</em>
+            </h3>
+            <p class="photo-text fu" style="--delay:.1s">
+              Naast grafisch ontwerp fotografeer ik — straatfotografie, architectuur, portret. Op zoek naar de spanning tussen licht, compositie en het vluchtige moment.
+            </p>
+            <p class="photo-text fu" style="--delay:.14s">
+              Film: een kortfilm als visueel experiment.
+            </p>
+            <a class="film-card fu" style="--delay:.18s"
+               href="https://youtu.be/1lDdIhFydRo?si=eWvjdmAVv6zohz67"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Kortfilm — bekijk op YouTube (opent in nieuw tabblad)">
+              <div class="film-thumb">
+                <img src="https://img.youtube.com/vi/1lDdIhFydRo/mqdefault.jpg"
+                     alt="Kortfilm thumbnail" loading="lazy" decoding="async"
+                     onerror="this.closest('.film-thumb').style.background='#1a1a1a'">
+              </div>
+              <div>
+                <div class="film-label">Kortfilm</div>
+                <div class="film-title">Visueel Experiment 2025</div>
+                <div class="film-sub">YouTube ↗</div>
+              </div>
+            </a>
+          </div>
+
+          <div id="photo-mosaic" class="photo-mosaic" role="list" aria-label="Fotografieoverzicht"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ CONTACT ════════════════════════════ -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="wrap sec-pad">
+
+        <div class="sec-hd">
+          <div class="sec-hd-left">
+            <span class="label label-red fu">05 — Contact</span>
+            <h2 id="contact-title" class="sec-title fu" style="--delay:.08s">Samenwerken</h2>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <h3 class="contact-heading fu" style="--delay:.05s">
+              Laten we<br><em>iets maken</em><br>dat telt.
+            </h3>
+            <p class="contact-sub fu" style="--delay:.1s">
+              Beschikbaar voor stage, freelance en creatieve samenwerkingen.
+            </p>
+            <nav class="contact-links fu" style="--delay:.14s" aria-label="Contactmogelijkheden">
+              <a href="mailto:afonso.matosdecruz@student.grafischetechnieken.be" class="contact-link">
+                <span class="contact-link-icon" aria-hidden="true">✉</span>
+                afonso.matosdecruz@student.grafischetechnieken.be
+              </a>
+              <a href="https://www.instagram.com/afonsomatosdacruz/" target="_blank" rel="noopener" class="contact-link">
+                <span class="contact-link-icon" aria-hidden="true">Ig</span>
+                @afonsomatosdacruz
+              </a>
+              <a href="https://www.behance.net/afonsomatos" target="_blank" rel="noopener" class="contact-link">
+                <span class="contact-link-icon" aria-hidden="true">Be</span>
+                Behance Portfolio ↗
+              </a>
+              <a href="https://www.linkedin.com/in/afonsomatos/" target="_blank" rel="noopener" class="contact-link">
+                <span class="contact-link-icon" aria-hidden="true">Li</span>
+                LinkedIn ↗
+              </a>
+            </nav>
+          </div>
+
+          <div class="fu" style="--delay:.1s">
+            <form id="contact-form" class="form" novalidate aria-label="Contactformulier">
+              <div class="form-row">
+                <div class="field">
+                  <label for="fn">Naam</label>
+                  <input id="fn" name="name" type="text" required autocomplete="name" placeholder="Jouw naam">
+                  <span class="field-error">Vul je naam in</span>
+                </div>
+                <div class="field">
+                  <label for="fe">E-mail</label>
+                  <input id="fe" name="email" type="email" required autocomplete="email" placeholder="jouw@email.be">
+                  <span class="field-error">Geldig e-mailadres vereist</span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="fs">Onderwerp</label>
+                <input id="fs" name="subject" type="text" placeholder="Stage · Freelance · Samenwerking">
+              </div>
+              <div class="field">
+                <label for="fm">Bericht</label>
+                <textarea id="fm" name="message" rows="5" required placeholder="Vertel me over jouw project of idee…"></textarea>
+                <span class="field-error">Schrijf een bericht</span>
+              </div>
+              <p class="form-note">Door in te dienen ga je akkoord met het <a href="privacy.html">privacybeleid</a>.</p>
+              <div id="form-status" aria-live="polite"></div>
+              <button type="submit" class="btn btn-dark" id="submit-btn">Bericht versturen</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════ FOOTER ════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="wrap">
+
+      <div class="footer-cta">
+        <div class="footer-big" aria-hidden="true">
+          <span class="rl-line">LATEN WE</span>
+          <span class="rl-line">SAMEN<span class="accent">WERKEN</span>.</span>
+        </div>
+        <div class="footer-cta-row">
+          <p class="footer-blurb">
+            Grafisch ontwerper beschikbaar voor stage, freelance en creatieve samenwerkingen. Vanuit Gent, bereikbaar voor de wereld.
+          </p>
+          <a href="mailto:afonso.matosdecruz@student.grafischetechnieken.be" class="footer-email">
+            afonso.matosdecruz@student.grafischetechnieken.be
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-cols">
+        <div>
+          <div class="footer-brand">Afonso Matos da Cruz</div>
+          <div class="footer-role">Grafisch Ontwerper · Gent, België</div>
+          <nav class="footer-social" aria-label="Social media">
+            <a href="https://www.instagram.com/afonsomatosdacruz/" target="_blank" rel="noopener" aria-label="Instagram">Ig</a>
+            <a href="https://www.behance.net/afonsomatos" target="_blank" rel="noopener" aria-label="Behance">Be</a>
+            <a href="https://www.linkedin.com/in/afonsomatos/" target="_blank" rel="noopener" aria-label="LinkedIn">Li</a>
+          </nav>
+        </div>
+        <div>
+          <div class="footer-col-title">Navigatie</div>
+          <nav class="footer-col-links">
+            <a href="#werk">Geselecteerd Werk</a>
+            <a href="#over">Over</a>
+            <a href="#archief">Losse Werken</a>
+            <a href="#foto">Fotografie</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <div class="footer-col-title">Projecten</div>
+          <nav class="footer-col-links">
+            <a href="project/smak.html">S.M.A.K. — Beeld, Twijfel &amp; Constructie</a>
+            <a href="project/disco.html">Project Disco</a>
+            <a href="project/oostende.html">Project Oostende</a>
+          </nav>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <div class="footer-col-links">
+            <a href="mailto:afonso.matosdecruz@student.grafischetechnieken.be">E-mail</a>
+            <a href="https://www.instagram.com/afonsomatosdacruz/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.behance.net/afonsomatos" target="_blank" rel="noopener">Behance</a>
+            <a href="assets/cv-afonso-matos-da-cruz.pdf" download>Download CV</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-base">
+        <span class="footer-copy">© <span data-year></span> Afonso Matos da Cruz. Alle rechten voorbehouden.</span>
+        <nav class="footer-legal" aria-label="Juridisch">
+          <a href="privacy.html">Privacy</a>
+          <a href="cookies.html">Cookies</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Afbeelding bekijken">
+    <div class="lb-wrap">
+      <button class="lb-close" aria-label="Sluiten">✕</button>
+      <button class="lb-prev" aria-label="Vorige">‹</button>
+      <img class="lb-img" src="" alt="">
+      <button class="lb-next" aria-label="Volgende">›</button>
+      <div class="lb-cap"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

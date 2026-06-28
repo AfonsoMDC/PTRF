@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Privacybeleid — Afonso Matos da Cruz</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;900&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.legal { padding: 10rem 0 6rem; min-height: 80vh; max-width: 680px; }
+.legal h1 { font-family: 'Inter Tight', sans-serif; font-size: clamp(2rem,4vw,3.5rem); font-weight: 900; letter-spacing: -.04em; margin-bottom: .5rem; }
+.legal .meta { font-family: 'JetBrains Mono',monospace; font-size: .55rem; letter-spacing: .18em; text-transform: uppercase; color: #8A8A8A; margin-bottom: 3rem; }
+.legal h2 { font-family: 'Inter Tight', sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: -.02em; margin: 2rem 0 .5rem; }
+.legal p, .legal li { font-size: .9375rem; line-height: 1.78; color: #8A8A8A; margin-bottom: .6rem; }
+.legal ul { margin-left: 1.5rem; list-style: disc; }
+.legal a { color: #6B0F1A; }
+</style>
+</head>
+<body>
+<div id="page-wipe" aria-hidden="true"></div>
+<header id="nav" role="banner"><div class="wrap nav-wrap"><a href="index.html" class="nav-logo">AMC<sup style="color:#6B0F1A;font-size:.5em;vertical-align:super">®</sup></a><nav class="nav-links"><a href="index.html#werk">Werk</a><a href="index.html#over">Over</a><a href="index.html#contact">Contact</a></nav><div class="nav-right"></div></div></header>
+<main><div class="wrap"><div class="legal">
+  <div class="label label-red" style="margin-bottom:.75rem">Juridisch</div>
+  <h1>Privacybeleid</h1>
+  <p class="meta">Laatste update: Juni 2025</p>
+  <p>Dit privacybeleid beschrijft hoe Afonso Matos da Cruz omgaat met persoonsgegevens verzameld via deze website.</p>
+  <h2>Welke gegevens worden verzameld</h2>
+  <p>Via het contactformulier worden naam, e-mailadres en bericht verzameld. Deze gegevens worden uitsluitend gebruikt om je bericht te beantwoorden en worden nooit doorverkocht.</p>
+  <h2>Gebruik van gegevens</h2>
+  <ul><li>Beantwoorden van contactverzoeken</li><li>Geen doorverkoop aan derden</li><li>Geen gebruik voor marketing</li></ul>
+  <h2>Externe diensten</h2>
+  <p>Google Fonts wordt geladen via CDN. Raadpleeg het <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacybeleid van Google</a> voor meer informatie.</p>
+  <h2>Contact</h2>
+  <p><a href="mailto:afonso.matosdecruz@student.grafischetechnieken.be">afonso.matosdecruz@student.grafischetechnieken.be</a></p>
+</div></div></main>
+<footer role="contentinfo"><div class="wrap"><div class="footer-base" style="padding:2rem 0"><span class="footer-copy">© <span data-year></span> Afonso Matos da Cruz</span><nav class="footer-legal"><a href="cookies.html">Cookies</a><a href="disclaimer.html">Disclaimer</a></nav></div></div></footer>
+<script>
+document.querySelectorAll('[data-year]').forEach(e=>e.textContent=new Date().getFullYear());
+const nav=document.getElementById('nav');window.addEventListener('scroll',()=>nav.classList.toggle('is-solid',window.scrollY>60),{passive:true});
+const w=document.getElementById('page-wipe');
+document.querySelectorAll('a[href]').forEach(a=>{const h=a.getAttribute('href');if(!h||h.startsWith('#')||h.startsWith('mailto')||a.target==='_blank'||h.startsWith('http'))return;a.addEventListener('click',e=>{e.preventDefault();if(w)w.classList.add('entering');setTimeout(()=>window.location.href=h,450)});});
+window.addEventListener('pageshow',()=>{if(!w)return;w.classList.remove('entering');w.classList.add('leaving');setTimeout(()=>w.classList.remove('leaving'),450)});
+</script>
+</body></html>
